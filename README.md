@@ -4,3 +4,4 @@ The Project Manager project from COMP330 at Loyola University Chicago with Profe
 
 #### Contributors:
 Zac Neuhardt
+Umar Shad
