@@ -32,7 +32,7 @@
 
 @media screen and (min-width: 768px){
     .main{
-        margin-left: 40%; 
+        margin-left: 50%; 
     }
 
     .sidenav{
@@ -44,11 +44,11 @@
     }
 
     .login-form{
-        margin-top: 80%;
+        margin-top: 60%;
     }
 
     .register-form{
-        margin-top: 20%;
+        margin-top: 40%;
     }
 }
 
