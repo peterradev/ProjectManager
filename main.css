@@ -85,5 +85,8 @@
     padding-right:  75px;
 }
 
+.navbar a.active {
+    border-bottom: 2px solid white;
+  }
 
 
