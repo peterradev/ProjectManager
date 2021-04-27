@@ -72,7 +72,7 @@
     background-color: rgb(57, 110, 153);
 }
 
-.navbar a{
+.navbar .nav-item a{
     color: white;
 }
 
@@ -84,4 +84,6 @@
 .navbar li{
     padding-right:  75px;
 }
+
+
 
