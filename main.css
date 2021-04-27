@@ -80,3 +80,8 @@
     color: rgb(57, 110, 153);
     background-color: white;
 }
+
+.navbar li{
+    padding-right:  75px;
+}
+
