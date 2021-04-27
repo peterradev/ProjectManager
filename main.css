@@ -67,3 +67,16 @@
     background-color:rgb(57, 110, 153) !important;
     color: #fff;
 }
+
+.navbar{
+    background-color: rgb(57, 110, 153);
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar a:hover{
+    color: rgb(57, 110, 153);
+    background-color: white;
+}
