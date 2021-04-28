@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <!--Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--Additional CSS-->
+  <link rel="stylesheet" href="main.css">
+
+  <title>New Project</title>
+</head>
+
+<body>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-sm justify-content-center text-white">
+  <span class="navbar-brand mb-0 h1 font-italic">LUC Project Manager</span>
+  <ul class="navbar-nav mx-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="home.html">Existing Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="new.html">New Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="settings.html">Settings</a>
+    </li>
+  </ul>
+  <a class="btn btn-sm btn-light" href="index.html" role="button">Logout</a>
+</nav>
+
+<!--New project form-->
+
+<div class="container py-5 w-50">
+  <h3>Create New Project</h3>
+  <form>
+    <div class="form-group">
+      <label for="projectName">Project Name</label>
+      <input type="text" class="form-control" id="projectName">
+    </div>
+    <div class="form-group">
+      <label for="startDate">Start Date</label>
+      <input type="date" class="form-control" id="startDate">
+    </div>
+    <div class="form-group">
+      <label for="startDate">End Date</label>
+      <input type="date" class="form-control" id="endDate">
+    </div>
+    <div class="form-group">
+      <label for="shareWith">Share With <i>(select at least 1)</i></label>
+      <select multiple class="form-control" id="exampleFormControlSelect2">
+        <option>Gurleen</option>
+        <option>Zac</option>
+        <option>Peter</option>
+        <option>Umar</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="shareWith" class="pr-5">Permissions</label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="view">
+        <label class="form-check-label" for="inlineRadio1">View Only</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="viewEdit">
+        <label class="form-check-label" for="inlineRadio2">View + Edit</label>
+      </div>
+    </div>
+    <div class="d-flex justify-content-end">
+      <a class="btn btn-sm btn-dark mr-5" href="home.html" role="button">Cancel</a>
+      <a class="btn btn-sm btn-dark" href="home.html" role="button">Submit</a>
+    </div>
+  </form>
+</div>
+
+<script>
+            // Material Select Initialization
+              $(document).ready(function() {
+              $('.mdb-select').materialSelect();
+              })
+          </script>
+</body>
+
+</html>
