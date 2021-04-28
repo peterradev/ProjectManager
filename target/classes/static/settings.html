@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <!--Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--Additional CSS-->
+  <link rel="stylesheet" href="main.css">
+
+  <title>Settings</title>
+</head>
+
+<body>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-sm justify-content-center text-white">
+  <span class="navbar-brand mb-0 h1 font-italic">LUC Project Manager</span>
+  <ul class="navbar-nav mx-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="home.html">Existing Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="new.html">New Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="settings.html">Settings</a>
+    </li>
+  </ul>
+  <a class="btn btn-sm btn-light" href="index.html" role="button">Logout</a>
+</nav>
+
+<!--Settings-->
+<div class="container w-50 pt-5">
+  <h3>Account Settings</h3>
+  <ul class="nav nav-tabs">
+    <li class="nav-item pr-5">
+      <a class="nav-link active" data-toggle="tab" href="#settings">Change Password</a>
+    </li>
+    <li class="nav-item pr-5">
+      <a class="nav-link" data-toggle="tab" href="#menu1">Change Project Permissions</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">Add User</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane container active" id="settings">
+      <form>
+        <div class="form-group">
+          <label for="password">Current Password</label>
+          <input type="password" class="form-control" id="password">
+        </div>
+        <div class="form-group">
+          <label for="newPassword">New Password</label>
+          <input type="password" class="form-control" id="newPassword">
+        </div>
+        <div class="form-group">
+          <label for="newPassword">Confirm Password</label>
+          <input type="password" class="form-control" id="newPassword">
+        </div>
+        <div class="d-flex justify-content-end">
+          <input class="btn btn-dark mr-5" type="reset" value="Reset">
+          <input class="btn btn-dark" type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+    <div class="tab-pane container fade" id="menu1">
+      <form>
+        <div class="form-group">
+          <select class="browser-default custom-select">
+            <option selected>Select Project</option>
+            <option value="1">#1</option>
+            <option value="2">#2</option>
+            <option value="3">#3</option>
+          </select>
+          <select class="browser-default custom-select mt-5">
+            <option selected>Select User</option>
+            <option value="1">Gurleen</option>
+            <option value="2">Zac</option>
+            <option value="3">Peter</option>
+            <option value="4">Umar</option>
+          </select>
+          <select class="browser-default custom-select mt-5">
+            <option selected>Select Permission</option>
+            <option value="view">View Only</option>
+            <option value="viewEdit">View + Edit</option>
+          </select>
+          <div class="d-flex justify-content-end mt-5">
+            <input class="btn btn-dark mr-5" type="reset" value="Reset">
+            <input class="btn btn-dark" type="submit" value="Submit">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="tab-pane container fade" id="menu2">
+      <form>
+        <div class="form-group">
+          <select class="browser-default custom-select">
+            <option selected>Select Project</option>
+            <option value="1">#1</option>
+            <option value="2">#2</option>
+            <option value="3">#3</option>
+          </select>
+          <select class="browser-default custom-select mt-5">
+            <option selected>Select User</option>
+            <option value="1">Gurleen</option>
+            <option value="2">Zac</option>
+            <option value="3">Peter</option>
+            <option value="4">Umar</option>
+          </select>
+          <select class="browser-default custom-select mt-5">
+            <option selected>Select Permission</option>
+            <option value="view">View Only</option>
+            <option value="viewEdit">View + Edit</option>
+          </select>
+          <div class="d-flex justify-content-end mt-5">
+            <input class="btn btn-dark mr-5" type="reset" value="Reset">
+            <input class="btn btn-dark" type="submit" value="Submit">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
