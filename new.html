@@ -39,6 +39,52 @@
             <a class="btn btn-sm btn-light" href="index.html" role="button">Logout</a>
           </nav>
 
+          <!--New project form-->
+          
+          <div class="container py-5">
+            <form>
+            <div class="form-group">
+              <label for="projectName">Project Name</label>
+              <input type="text" class="form-control" id="projectName">
+            </div>
+            <div class="form-group">
+              <label for="startDate">Start Date</label>
+              <input type="date" class="form-control" id="startDate">
+            </div>
+            <div class="form-group">
+              <label for="startDate">End Date</label>
+              <input type="date" class="form-control" id="endDate">
+            </div>
+            <div class="form-group">
+              <label for="shareWith">Share With <i>(select at least 1)</i></label>
+              <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option>Gurleen</option>
+                <option>Zac</option>
+                <option>Peter</option>
+                <option>Umar</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="shareWith" class="pr-5">Permissions</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="view" value="view">
+                <label class="form-check-label" for="view">View Only</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="viewEdit" value="viewEdit">
+                <label class="form-check-label" for="viewEdit">View + Edit</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          </div>
+
+          <script>
+            // Material Select Initialization
+              $(document).ready(function() {
+              $('.mdb-select').materialSelect();
+              })
+          </script>
     </body>
 
 </html>
