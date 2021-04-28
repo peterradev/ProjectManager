@@ -99,3 +99,9 @@
     color: white
   }
 
+  .tab-content {
+    border: 1px solid #dee2e6;
+    border-top: transparent;
+    padding: 15px;
+  }
+

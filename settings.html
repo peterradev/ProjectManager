@@ -44,7 +44,7 @@
             <h3>Account Settings</h3>
           <ul class="nav nav-tabs">
             <li class="nav-item pr-5">
-              <a class="nav-link active" data-toggle="tab" href="#home">Change Password</a>
+              <a class="nav-link active" data-toggle="tab" href="#settings">Change Password</a>
             </li>
             <li class="nav-item pr-5">
               <a class="nav-link" data-toggle="tab" href="#menu1">Change Project Permissions</a>
@@ -56,7 +56,26 @@
 
           <!-- Tab panes -->
           <div class="tab-content">
-            <div class="tab-pane container active" id="home">Current Password:</div>
+            <div class="tab-pane container active" id="settings">
+              <form>
+                <div class="form-group">
+                  <label for="password">Current Password</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+                <div class="form-group">
+                  <label for="newPassword">New Password</label>
+                  <input type="password" class="form-control" id="newPassword">
+                </div>
+                <div class="form-group">
+                  <label for="newPassword">Confirm Password</label>
+                  <input type="password" class="form-control" id="newPassword">
+                </div>
+                <div class="d-flex justify-content-end">
+                  <input class="btn btn-dark mr-5" type="reset" value="Reset"> 
+                  <input class="btn btn-dark" type="submit" value="Submit">
+                </div>
+                </form>
+            </div>
             <div class="tab-pane container fade" id="menu1">Permissions:</div>
             <div class="tab-pane container fade" id="menu2">Select Users:</div>
           </div>
