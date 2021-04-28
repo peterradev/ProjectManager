@@ -89,4 +89,15 @@
     border-bottom: 2px solid white;
   }
 
+  .nav-tabs .nav-item .nav-link {
+    color:rgb(57, 110, 153);
+    border: 1px solid #dee2e6
+  }
+  
+  .nav-tabs .nav-item .nav-link.active {
+    background-color: rgb(57, 110, 153);
+    color: white
+    
+
+  }
 
